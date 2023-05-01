@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title> Switch </title>
+    </head>
+    <body>
+        <center>
+            <h1> Switch Example </h1>
+            <button onclick="calculate()"> Calculate </button>
+            <p id="demo"> </p>
+            <script>
+                function calculate() {
+                    let result;
+
+                    const operator = prompt("Enter Operator(+,-,*,/): ")
+
+                    const num1 = parseInt(prompt("Enter First Number: "))
+                    const num2 = parseInt(prompt("Enter Second Number: "))
+
+                    alert( operator + "\n" + num1 + "\n" + num2)
+
+                    switch(operator) {
+                        case '+' :
+                            result = num1 + num2
+                            document.getElementById("demo").innerHTML = `${num1} + ${num2} = ${result}`
+                            break;
+
+                        case '-' :
+                            result = num1 - num2
+                            document.getElementById("demo").innerHTML = `${num1} - ${num2} = ${result}`
+                            break;
+
+                        case '*' :
+                            result = num1 * num2
+                            document.getElementById("demo").innerHTML = `${num1} * ${num2} = ${result}`
+                            break;
+
+                        case '/' :
+                            result = num1 / num2
+                            document.getElementById("demo").innerHTML = `${num1} / ${num2} = ${result}`
+                            break;
+
+                        default:
+                            document.getElementById("demo").innerHTML = "Invalid Operator"
+                            break;
+                    }
+                }
+            </script>
+        </center>
+    </body>
+</html>

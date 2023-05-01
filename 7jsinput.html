@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> JS Input Example </title>
+    </head>
+    <body>
+        <center>
+            <h1> JS Input Example </h1>
+            <h3> Your Favourite Place: </h3>
+            <button onclick="favPlace()"> Enter your Favourite Place </button>
+            <p id="place"> I will go and prepare a place for you! </p>
+            <script>
+                function favPlace() {
+                    var place = prompt("Enter your Favourite Place")
+
+                    if(place!=null) {
+                        document.getElementById("place").innerHTML = place; 
+                    }
+                }
+            </script>
+        </center>
+    </body>
+</html>

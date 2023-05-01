@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> Assignment 5 </title>
+    </head>
+    <body>
+            <h2> Assignment 5 </h2>
+            <h2> Arrays / Display Computer Languages </h2>
+            <p id="gr8language"></p>
+            <button onClick="getLanguages()"> Show Computer Languages </button>
+            <script>
+                function getLanguages() {
+                    var index;
+                    var text = "<ul>"
+                    var cities = ["Python","JavaScript", "Java", "C#", 
+                    "C", "C++", "Go", "R", "Swift","PHP"]                
+                    for(index = 0; index < cities.length; index++){
+                        text += "<li>" + cities[index] + "</li>"
+                    }
+                    text += "</ul>"
+                    document.getElementById("gr8language").innerHTML = text;
+                }
+            </script>
+            <hr>
+
+            <h2> Objects / Employee Object Information </h2>
+            <p id="empDetails"></p>
+            <script>
+                const person = {employeeName:"Veera", employeeNo:"7", age:"30", department:"InfoSec"};
+                document.getElementById("empDetails").innerHTML = person.employeeName + " is working in the " + person.department + " department.";
+            </script>
+            <hr>
+
+            <h2> Functions / Largest Number</h2>
+            <p id="large"></p>
+            <button onClick="Math_ops()"> Show Maximum Number </button>
+            <script>
+                function Math_ops(){
+                    var max_num = Math.max (365, 2555, 3000);
+                
+                document.getElementById("large").innerHTML = "Maximum of 365, 2555, 3000 is "+ max_num + "<br />";}  
+            </script>
+            <hr>
+
+            <h2> Event Handler / MouseOver </h2>
+            <button onmouseover="myFunction()">Button</button>
+            <script>
+            function myFunction() {
+                        alert("You have moved the mouse on the button!");
+            }
+            </script>  
+            <hr>
+
+            <h2> If Condition / Enter Name </h2>
+            <h3> Enter Name: </h3>
+            <button type="button" onclick="myFunction()">Enter Your Name</button>
+            <p id="demo"></p>
+            <script>
+                function myFunction() {
+                    const name = prompt("Enter your name: ")
+        
+                if (name!=null) {
+                    document.getElementById("demo").innerHTML = "Hello" + name + "Welcome!";
+                } else {
+                    document.getElementById("demo").innerHTML = "Sorry, you have not entered any name";}
+                }
+                </script>
+    </bodY>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> DOM </title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color:green" id="change"> "But according to his promise we are waiting <br>
+                for new heavens and a new earth in which righteousness dwells."<br>
+                -2 Peter 3:13 </h1>
+            <button onclick="changeImage()"> Change Image </button>
+
+            <!-- <button onclick="changeStyle()"> Change Style </button> -->
+            <br> <br>
+            <hr>
+            <img id="image" src="images/1.jfif" width="50%" height="50%">
+
+            <script>
+                function changeImage() {
+                    document.getElementById("image").src = "images/2.jpg" 
+
+                    document.getElementById("change").style.color = "brown" 
+                }
+                
+                // function changeStyle() {
+                //     document.getElementById("style").style.color = "red" 
+                // }
+            </script>
+        </center>
+    </body>
+</html>

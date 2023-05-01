@@ -1,0 +1,25 @@
+<html>
+    <head> 
+        <title> Today's Date </title>
+    </head>
+    <body>
+        <center>
+            <h1> JS Display Today's Date </h1>
+            <h3 id="date"> Today's Date: </h3>
+            <button onclick="getTodaysDate()"> Display Date </button>
+            <!-- <button onmouseover="getTodaysDate()"> Display Date </button>
+            <script>
+                function getTodaysDate(){ 
+                    document.getElementById("date").innerHTML = Date();
+                }
+            </script> -->
+
+            <script>
+                function getTodaysDate(){ 
+                    const dt = new Date();
+                    document.getElementById("date").innerHTML = dt.getDate();
+                }
+            </script>
+        </center>
+    </body>
+</html>

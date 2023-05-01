@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Display Array Lists in JS </title>
+    </head>
+    <body>
+            <h1> Display Array Lists in JS </h1>
+            <p id="gr8city"></p>
+            <button onClick="getCity()"> Show Great City </button>
+            <script>
+                function getCity() {
+                    var index;
+                    var text = "<ul>"
+                    var cities = ["London, England", "New Yor & Los Angeles, U.S.A", "Paris, France", "Tokyo, Japan", 
+                    "Sydney, Australia", "Dubai, U.A.E", "Rome, Italy", "Berlin, Germany"]
+                    
+                    for(index = 0; index < cities.length; index++){
+                        text += "<li>" + cities[index] + "</li>"
+                    }
+                    text += "</ul>"
+
+                    document.getElementById("gr8city").innerHTML = text;
+                }
+            </script>
+    </bodY>
+</html>

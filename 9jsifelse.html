@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> If Else </title>
+    </head>
+    <body>
+        <center>
+            <h1> If Else Example </h1>
+            <button onclick="sample()"> Show Output </button>
+            <p id="demo"> </p>
+            <script>
+                function sample(){
+                    const number = prompt("Enter a number: ")
+
+                    if(number > 0){
+                        document.getElementById("demo").innerHTML = "Positive Number"
+                    }
+                    else if(number < 0){
+                        document.getElementById("demo").innerHTML = "Negative Number"
+                    }
+                    else{
+                        document.getElementById("demo").innerHTML = "Entered Number is Zero"
+                    }
+                }
+            </script>
+        </center>
+    </body>
+</html>
